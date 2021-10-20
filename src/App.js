@@ -4,6 +4,8 @@ import Trainings from './components/Trainings';
 
 export default function App() {
   return (
-    <Trainings />
+    <>
+      <Trainings />
+    </>
   );
 }
