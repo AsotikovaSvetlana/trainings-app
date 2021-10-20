@@ -1,38 +1,87 @@
-.App {
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  width: 200px;
+  display: block;
+  margin-top: 10px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.Steps {
+  width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Steps-form {
+  position: relative;
+  margin-bottom: 30px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Steps-fields {
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Steps-button {
+  width: 85px;
+  padding: 15px;
+  align-self: flex-end;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.Steps-button:hover {
+  border: 2px solid darkorange;
+  color: darkorange;
+}
+
+.Steps-table {
+  min-height: 110px;
+  text-align: center;
+}
+
+.table-body {
+  min-height: 200px;
+  box-shadow: 0 0 0 2px black;
+  border-radius: 15px;
+}
+
+td {
+  padding: 15px 10px;
+}
+
+.material-icons {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.material-icons:first-child {
+  margin-right: 10px;
+}
+
+.error {
+  position: absolute;
+  bottom: -22px;
+  left: 50px;
+  color: darkorange
 }
